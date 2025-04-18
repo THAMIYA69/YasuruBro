@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YasuruBro</title>
+  <link rel="icon" type="image/png" href="images/YasuRu logo.png" /> 
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  
+  AOS.init();
+</script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    /* Your custom styles – same as your original, plus fixed bits */
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    video::-webkit-media-controls {
+      display: none !important;
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-up {
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+
+    .fade-delay-1 { animation-delay: 0.2s; }
+    .fade-delay-2 { animation-delay: 0.4s; }
+    .fade-delay-3 { animation-delay: 0.6s; }
+
+    .side-nav {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      z-index: 100;
+    }
+
+    .side-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      background: transparent;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .side-nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateX(-5px);
+    }
+
+    .ray-bg {
+      background: url('your-rays.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    .overlay {
+      background: url('your-clouds.png') no-repeat top center;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<style>
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+</style>
+
+
+<body class="text-white font-sans relative overflow-hidden">
+
+  <!-- Side Nav -->
+  <div class="side-nav">
+    <a href="#home">⚪</a>
+    <a href="#streamer">⚪</a>
+    <a href="#contact">⚪</a>
+  </div>
+
+<!-- Social Icons -->
+<div class="fixed bottom-6 right-6 flex gap-4 z-30">
+  <a href="https://www.instagram.com/yasuru_official" target="_blank" class="animate-float">
+    <img src="images/OIP.jpeg" alt="Instagram" class="w-8 h-8 rounded-full shadow-[0_0_10px_#ff00ff] hover:scale-110 transition duration-300 ease-in-out" />
+  </a>
+  <a href="https://www.tiktok.com/@yasuru_bro" target="_blank" class="animate-float delay-200">
+    <img src="images/tiktok.png" alt="TikTok" class="w-8 h-8 rounded-full shadow-[0_0_10px_#00f0ff] hover:scale-110 transition duration-300 ease-in-out" />
+  </a>
+  <a href="https://discord.com/invite/NnpkhhTENS" target="_blank" class="animate-float delay-400">
+    <img src="images/discord.png" alt="Facebook" class="w-9 h-9 rounded-full shadow-[0_0_10px_#4267B2] hover:scale-110 transition duration-300 ease-in-out" />
+  </a>
+</div>
+
+  <!-- Overlays -->
+  <div class="absolute w-full h-full ray-bg -z-10 opacity-50"></div>
+  <div class="absolute top-0 w-full h-64 overlay z-10"></div>
+
+  <!-- HERO SECTION -->
+   <!-- Background Video -->
+<video autoplay muted loop playsinline class="absolute inset-0 w-full h-screen object-cover -z-10">
+  <source src="Sequence 01(1)_preview.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .bg-hero {
+      background: url('93620a38-d51e-4827-8dd2-9a7b7ebbaefb.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    .shadow-text-1 {
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .shadow-text-2 {
+      text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
+    }
+
+    .shadow-text-3 {
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <section class="hero" id="home">
+  <section class="w-full h-screen flex flex-col items-center justify-center text-center px-4 bg-hero">
+    <h5 class="text-4xl md:text-6xl font-extrabold uppercase mb-2 shadow-text-1" data-aos="fade-up" data-aos-delay="100">
+      Yo, What's Up Boys & Girls!
+    </h5>
+    <h5 class="text-5xl md:text-7xl font-black uppercase mb-4 shadow-text-2" data-aos="fade-up" data-aos-delay="300">
+      I'm YasuRu
+    </h5>
+    <p class="text-lg md:text-xl max-w-xl mx-auto shadow-text-3" data-aos="fade-up" data-aos-delay="500">
+      I do live-streams to entertain people.
+    </p>
+    <!-- Footer -->
+    <footer class="fixed bottom-2 text-xs left-0 text-white opacity-70">
+      Copyright © 2025 YasuRu. All Rights Reserved.
+    </footer>
+  </section>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+  <!-- STREAMER ARC SECTION -->
+  <section class="relative w-full min-h-screen flex items-center justify-center overflow-hidden" id="streamer">
+    
+    <!-- Background video -->
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+      <source src="Sequence 02(1)(2)(2).mp4" type="video/mp4">
+    </video>
+
+   
+    <div class="relative z-10 w-full max-w-7xl px-6 py-16 flex flex-col md:flex-row items-center justify-between text-white gap-10">
+  <!-- Streamer Image -->
+<div class="w-full md:w-1/2 flex justify-center" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+  <img src="images/u.png" alt="Yasuru Bro" class="rounded-xl max-w-full h-auto shadow-lg shadow-purple-500/30">
+</div>
+
+
+      <!-- Text Content -->
+      <div class="w-full md:w-1/2 text-right md:text-left space-y-6">
+
+        <h1 class="text-4xl md:text-6xl font-black leading-tight" data-aos="fade-up" data-aos-delay="100">
+          THE <span class="text-transparent" style="-webkit-text-stroke: 1px white;">STREAMER</span><br>CHARACTER
+        </h1>
+      
+        <h3 class="text-lg md:text-2xl font-semibold" data-aos="fade-up" data-aos-delay="200">
+          Cringy Jokes and Gamer :)
+        </h3>
+      
+        <p class="text-sm md:text-base text-gray-200 leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+          Yo, What's Up Boys & Girls! I'm Yasuru Bro, your go-to streamer for live gaming action. I stream twice a week—every Monday and Saturday at 6:00 PM (9:00 PM+). Whether it's story-driven adventures or competitive matches, I'm here to entertain and connect with fellow gaming enthusiasts. Join me for some fun, laughs, and epic gameplay moments!
+        </p>
+      
+        <!-- Social Buttons -->
+        <div class="flex flex-wrap gap-4 justify-end md:justify-start mt-6" data-aos="fade-up" data-aos-delay="400">
+          <a href="https://youtube.com/@yasuru_bro?si=Xyd25RcwydsBk9TK" target="_blank"
+             class="flex flex-col items-start gap-1 bg-white bg-opacity-10 px-5 py-3 rounded-xl border border-white border-opacity-30 hover:bg-opacity-20 transition">
+            <span class="flex items-center gap-3">
+              <i class="fab fa-youtube text-xl text-red-500"></i> <span>YouTube</span>
+            </span>
+            <small class="text-white text-xs">50+ Subscribers</small>
+          </a>
+      
+          <a href="https://web.facebook.com/profile.php?id=61558942237088" target="_blank"
+             class="flex flex-col items-start gap-1 bg-white bg-opacity-10 px-5 py-3 rounded-xl border border-white border-opacity-30 hover:bg-opacity-20 transition">
+            <span class="flex items-center gap-3">
+              <i class="fab fa-facebook text-xl text-blue-500"></i> <span>Facebook</span>
+            </span>
+            <small class="text-white text-xs">150+ Followers</small>
+          </a>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+<!-- CONTACT SECTION -->
+<section class="relative w-full min-h-screen flex items-center justify-center px-6 py-16 bg-black bg-opacity-50 backdrop-blur-70g overflow-hidden" id="contact">
+ 
+  <!-- Background Video -->
+ <video autoplay muted loop playsinline class="absolute w-full h-full object-cover -z-10">
+  <source src="Sequence 01(1)_preview.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<div class="max-w-3xl w-full text-center text-white space-y-8 relative z-10" data-aos="zoom-in" data-aos-duration="1000">
+  <h2 class="text-4xl md:text-5xl font-extrabold uppercase">Get in Touch</h2>
+  <p class="text-lg md:text-xl text-gray-300">
+    Want to collaborate, suggest game ideas, or just say hi? Drop me a message!
+  </p>
+
+  <form action="https://formspree.io/f/xqapjolg" method="POST" class="space-y-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+    <div>
+      <input type="text" name="name" placeholder="Your Name" required
+        class="w-full px-5 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder-white placeholder-opacity-60">
+    </div>
+
+    <div>
+      <input type="email" name="email" placeholder="Your Email" required
+        class="w-full px-5 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder-white placeholder-opacity-60">
+    </div>
+
+    <div>
+      <textarea name="message" placeholder="Your Message" rows="5" required
+        class="w-full px-5 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder-white placeholder-opacity-60"></textarea>
+    </div>
+
+    <button type="submit"
+      class="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition text-white font-bold uppercase tracking-wide shadow-lg shadow-purple-800/50">
+      Send Message
+    </button>
+  </form>
+</div>
+</section>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
+<!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
